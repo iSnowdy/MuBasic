@@ -1,6 +1,87 @@
+.html {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: auto;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+}
+
 body {
     background-color: #f3f3f3;
     font-family: Suisseintl, 'Open Sans', sans-serif;
-
-
+    color: #1b1a19;
+    font-size: 1vw;
+    line-height: 1.6;
+    letter-spacing: 0em;
 }
+
+h1 {
+    font-size: 3.28em;
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.1em;
+    line-height: 1.3;
+}
+
+a {
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.page_wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-size: 1em;
+}
+
+.section_class {
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.left_side {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    background-color: #fac670;
+}
+
+.left_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_heading {
+    width: 100%;
+    max-width: 30em;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+}
+
+.left_bottom {
+    width: 100%;
+    max-width: 16em;
+}
+
+.right_side {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 50%;
+    padding-left: 4.7em;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1b1a19;
+}
+
