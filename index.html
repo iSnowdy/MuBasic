@@ -6,8 +6,8 @@
         <meta name="description" content="Practice Sounds and JS">
         <meta name="author" content="Snow">
 
-        <link rel="stylesheet" href="/CSS/mubasicStyle.css">
-        <script src="js/javascript.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/javascript.js"></script>
         <!-- Favicon -->
         <link rel="icon" type="image/icon" href="/media/image/favicon-48x48.ico">
 
@@ -28,16 +28,16 @@
         <div class="page_wrapper">
             <main class="main_wrapper">
                 <section class="section_class">
-                    <div class="left_side">
+                    <div class="left_side" style="transform: (0px, 0%);">
 
                         <div class="left_padding">
                             <div class="left_top">
-                                <a href="#" class="logo"><img src="/media/image/logo.jpg" alt="MuBasic Logo"></a>
+                                    <a href="#" class="logo"><img src="/media/image/logo.jpg" alt="MuBasic Logo"></a>
+                                
+                                <div class="left-side_logo">
+                                    <img src="/media/image/left-logo.jpg" alt="Left Logo">
+                                </div>
                             </div>
-                            <div class="left-side_logo">
-                                <img src="/media/image/left-logo.jpg" alt="Left Logo">
-                            </div>
-
                             <div class="left_heading">
                                 <h1>
                                     The <span id="text-color-orange">#1</span>
@@ -58,71 +58,85 @@
 
 
                     <div class="right_side">
-                        <div class="sounds"> <!-- keys -->
-                            <a key-name="m" audio-file="https://oimachi.cloud/clients/mubasic/m.mp3" href="#" class="key-m" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        M
-                                    </p>
-                                </div>
-                                <div class="overlay"></div>
-                            </a>
-
-                            <a key-name="u" audio-file="https://oimachi.cloud/clients/mubasic/u.mp3" href="#" class="key-u" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        U
-                                    </p>
-                                </div>
-                                <div class="over_overlay">
+                        <div class="keys">
+                            <div class="key">
+                                <a key-name="m" audio-file="https://oimachi.cloud/clients/mubasic/m.mp3" href="#" class="key-m" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap">
+                                        <p class="sound_text">
+                                            M
+                                        </p>
+                                    </div>
                                     <div class="overlay"></div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
 
-                            <a key-name="b" audio-file="https://oimachi.cloud/clients/mubasic/b.mp3" href="#" class="key-b" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        B
-                                    </p>
-                                </div>
-                                <div class="overlay"></div>
-                            </a>
+                            <div class="key is-dark">
+                                <a key-name="u" audio-file="https://oimachi.cloud/clients/mubasic/u.mp3" href="#" class="key-u" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap is-dark">
+                                        <p class="sound_text">
+                                            U
+                                        </p>
+                                    </div>
+                                    <div class="over_overlay">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </a>
+                            </div>
 
-                            <a key-name="a" audio-file="https://oimachi.cloud/clients/mubasic/a.mp3" href="#" class="key-a" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        A
-                                    </p>
-                                </div>
-                                <div class="overlay"></div>
-                            </a>
+                            <div class="key is-yellow">
+                                <a key-name="b" audio-file="https://oimachi.cloud/clients/mubasic/b.mp3" href="#" class="key-b" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap">
+                                        <p class="sound_text">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </a>
+                            </div>
 
-                            <a key-name="s" audio-file="https://oimachi.cloud/clients/mubasic/s.mp3" href="#" class="key-s" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        S
-                                    </p>
-                                </div>
-                                <div class="over_overlay"></div>
-                            </a>
+                            <div class="key is-tan">
+                                <a key-name="a" audio-file="https://oimachi.cloud/clients/mubasic/a.mp3" href="#" class="key-a" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap">
+                                        <p class="sound_text">
+                                            A
+                                        </p>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </a>
+                            </div>
 
-                            <a key-name="i" audio-file="https://oimachi.cloud/clients/mubasic/i.mp3" href="#" class="key-i" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        I
-                                    </p>
-                                </div>
-                                <div class="overlay"></div>
-                            </a>
+                            <div class="key is-dark">
+                                <a key-name="s" audio-file="https://oimachi.cloud/clients/mubasic/s.mp3" href="#" class="key-s" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap is-dark">
+                                        <p class="sound_text">
+                                            S
+                                        </p>
+                                    </div>
+                                    <div class="over_overlay"></div>
+                                </a>
+                            </div>
 
-                            <a key-name="c" audio-file="https://oimachi.cloud/clients/mubasic/c.mp3" href="#" class="key-c" style="transform: translate(0%, 0px);">
-                                <div class="sound_text_wrap">
-                                    <p class="sound_text">
-                                        C
-                                    </p>
-                                </div>
-                                <div class="overlay"></div>
-                            </a>
+                            <div class="key is-orange">
+                                <a key-name="i" audio-file="https://oimachi.cloud/clients/mubasic/i.mp3" href="#" class="key-i" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap">
+                                        <p class="sound_text">
+                                            I
+                                        </p>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </a>
+                            </div>
+
+                            <div class="key is-purple">
+                                <a key-name="c" audio-file="https://oimachi.cloud/clients/mubasic/c.mp3" href="#" class="key-c" style="transform: translate(0%, 0px);">
+                                    <div class="sound_text_wrap">
+                                        <p class="sound_text">
+                                            C
+                                        </p>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </a>
+                            </div>
 
                         </div>
                     </div>

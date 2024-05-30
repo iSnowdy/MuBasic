@@ -1,3 +1,11 @@
+/*
+General Stuff
+*/
+
+* {
+    box-sizing: border-box;
+}
+
 .html {
     position: absolute;
     left: 0%;
@@ -17,9 +25,27 @@ body {
     letter-spacing: 0em;
 }
 
+/* Ugly white margins out! >< */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Like this when overing it will move! */
+body .key:hover {
+    transform: translateX(2.1em) !important;
+}
+
 h1 {
-    font-size: 3.28em;
-    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 5em;
+    line-height: 0.8;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 p {
@@ -33,6 +59,10 @@ a {
     font-size: 1em;
     text-decoration: none;
 }
+
+/*
+Whole HTML
+*/
 
 .page_wrapper {
     position: relative;
@@ -49,6 +79,10 @@ a {
     align-items: stretch;
 }
 
+/*
+Left Side of the Website
+*/
+
 .left_side {
     position: relative;
     z-index: 1;
@@ -56,11 +90,39 @@ a {
     background-color: #fac670;
 }
 
+.left_padding {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1.5em;
+}
+
+/*
+Header of the Left Side. Basically the Logo's
+*/
+
 .left_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.logo {
+    width: 8em;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.left-side_logo {
+    width: 2em;
+
+}
+
+/*
+Middle of the Left Side. Bascially the big ass text
+*/
 
 .left_heading {
     width: 100%;
@@ -69,10 +131,25 @@ a {
     padding-bottom: 3.5em;
 }
 
+#text-color-orange {
+    color: #f37925;
+}
+
+/*
+Bottom of the Left Side. The smol footer text
+*/
+
 .left_bottom {
     width: 100%;
     max-width: 16em;
 }
+
+
+
+
+/*
+Right Side of the Website
+*/
 
 .right_side {
     position: relative;
@@ -85,3 +162,167 @@ a {
     background-color: #1b1a19;
 }
 
+/*
+Inner wrapper of the Key sounds
+*/
+
+.keys {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    font-size: 1.9vh;
+}
+
+.key {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding: 1.7em;
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    transition: transform 200ms ease;
+    background-color: #91c3ce;
+}
+
+/*
+For U and S
+*/
+
+.key.is-dark {
+    position: relative;
+    z-index: 2;
+    width: 64%;
+    margin-top: -3.7em;
+    margin-bottom: -3.7em;
+    background-color: #0d0d0d;
+}
+
+.sound_text_wrap {
+    display: flex;
+    width: 4em;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.09);
+    color: #fff;
+}
+
+.sound_text_wrap.is-dark {
+    background-color: #1b1a19;
+}
+
+.overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.over_overlay {
+    background-color: hsla(0, 0%, 100%, 0.22);
+}
+
+/*
+B Key Stuff
+*/
+
+.key.is-yellow {
+    background-color: #fac670;
+
+}
+
+/*
+A Key Stuff
+*/
+
+.key.is-tan {
+    background-color: #f5e1be;
+}
+
+/*
+S Key Stuff
+*/
+
+
+
+/*
+I Key Stuff
+*/
+
+.key.is-orange {
+    background-color: #f37925;
+}
+
+/*
+C Key Stuff
+*/
+
+.key.is-purple {
+    background-color: #c0a8e6;
+}
+
+/* Responsive Stuff Despair */
+
+@media screen and (max-width: 990px) {
+
+    body {
+        font-size: 0.62em;
+    }
+
+    .right_side {
+        padding-top: 6em;
+        padding-bottom: 6em;
+    }
+
+    .left_heading {
+        font-size: 1.3em;
+    }
+
+    .left_bottom {
+        font-size: 1.4em;
+    }
+
+    .keys {
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    
+    .left_side {
+        width: 100%;
+    }
+
+    .right_side {
+        width: 100%;
+    }
+
+    .left_bottom {
+        max-width: 23em;
+    }
+
+    .keys {
+        font-size: 1em;
+    }
+
+    .left_heading {
+        padding-top: 4.8em;
+        padding-bottom: 7.1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .left_heading {
+        font-size: 1.1em;
+    }
+}
