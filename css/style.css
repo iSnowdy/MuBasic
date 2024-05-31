@@ -110,14 +110,16 @@ Header of the Left Side. Basically the Logo's
 }
 
 .logo {
-    width: 8em;
     max-width: 100%;
     display: inline-block;
 }
 
-.left-side_logo {
-    width: 2em;
+.logo img {
+    width: 8em;
+}
 
+.left-side_logo img {
+    width: 3em;
 }
 
 /*
@@ -143,9 +145,6 @@ Bottom of the Left Side. The smol footer text
     width: 100%;
     max-width: 16em;
 }
-
-
-
 
 /*
 Right Side of the Website
@@ -247,12 +246,6 @@ A Key Stuff
 .key.is-tan {
     background-color: #f5e1be;
 }
-
-/*
-S Key Stuff
-*/
-
-
 
 /*
 I Key Stuff
