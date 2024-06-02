@@ -34,7 +34,8 @@ html, body {
     height: 100%;
 }
 
-/* Like this when overing it will move! */
+/* Like this when hovering it will move! */
+
 body .key:hover {
     transform: translateX(2.1em) !important;
 }
@@ -187,6 +188,10 @@ Inner wrapper of the Key sounds
     background-color: #91c3ce;
 }
 
+.key :active {
+    opacity: 2;
+}
+
 /*
 For U and S
 */
@@ -269,6 +274,10 @@ C Key Stuff
 
     body {
         font-size: 0.62em;
+    }
+
+    body .key:hover {
+        transform: translateX(2.1em) !important;
     }
 
     .right_side {
